@@ -1,0 +1,159 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f7fb"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet"><title>NiSiNEX Admin</title>
+<style>
+:root{--blue:#e85b91;--ink:#28202a;--muted:#857783;--line:#f3dce6;--bg:#fff3f8}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Roboto,sans-serif;color:var(--ink)}button,input,textarea,select{font:inherit}button{cursor:pointer}.top{height:66px;background:#fff;display:flex;align-items:center;padding:0 20px;box-shadow:0 2px 12px #1d35570b;position:sticky;top:0;z-index:5}.brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:850}.brand img{display:none}.brand small{font-size:10px;letter-spacing:1px;color:#c53e76;margin-left:5px}.right{margin-left:auto;display:flex;align-items:center;gap:10px}.pill{border:0;border-radius:20px;background:#ffe5ef;color:#c53e76;padding:9px 13px;font-size:12px;font-weight:750}.layout{max-width:1180px;margin:23px auto;padding:0 17px;display:grid;grid-template-columns:215px minmax(0,1fr);gap:20px}.side,.card{background:#fff;border:1px solid var(--line);border-radius:17px}.side{height:max-content;padding:13px;position:sticky;top:82px}.sidetitle{font-size:10px;letter-spacing:1px;color:#929ba7;font-weight:800;padding:8px}.side button{width:100%;text-align:left;border:0;background:none;padding:12px;border-radius:10px;color:#4d5968;font-weight:700}.side button.active,.side button:hover{background:#ffe5ef;color:#c53e76}.main{min-width:0}.heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:2px 0 17px}.heading h1{font-size:24px;margin:0}.heading p{font-size:12px;color:var(--muted);margin:6px 0 0}.primary{border:0;background:linear-gradient(135deg,#ed79ad,#ce3f83);color:#fff;padding:11px 16px;border-radius:10px;font-weight:750}.secondary{border:1px solid var(--line);background:#fff;color:#344154;padding:9px 13px;border-radius:10px;font-weight:700}.danger{border:0;background:#fff0f0;color:#bd3541;padding:8px 11px;border-radius:9px;font-weight:700}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:17px}.stat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px}.stat b{display:block;font-size:25px}.stat span{font-size:12px;color:var(--muted)}.card{padding:19px;margin-bottom:17px;box-shadow:0 7px 25px #d75b940b}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:750;color:#485466}.field input,.field select,.field textarea{border:1px solid #dce3ec;border-radius:9px;padding:11px;outline:0;width:100%;background:#fff}.field textarea{min-height:95px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#ee8db1;box-shadow:0 0 0 3px #fff0f5}.hint{font-size:11px;color:#8a94a1}.upload{border:1px dashed #edb6cb;background:#fff9fb;border-radius:11px;padding:12px}.preview{width:72px;height:72px;object-fit:cover;border-radius:17px;margin-top:8px;display:none}.shots{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.shots img{height:92px;width:65px;object-fit:cover;border-radius:8px}.checkline{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;font-weight:700}.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:18px}.status{font-size:12px;color:var(--muted);min-height:16px}.title2{font-size:16px;margin:0 0 14px}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:610px}th,td{text-align:left;border-bottom:1px solid #edf0f4;padding:11px 9px;font-size:12px}th{color:#7e8997;text-transform:uppercase;font-size:10px;letter-spacing:.5px}.appcell{display:flex;align-items:center;gap:9px;font-weight:750}.appcell img{width:40px;height:40px;object-fit:cover;border-radius:10px}.badge{font-size:10px;font-weight:800;padding:5px 8px;border-radius:20px}.pub{background:#e5f6ec;color:#147c46}.draft{background:#fff3df;color:#936300}.hidden{display:none!important}.warning{background:#fff7e6;border:1px solid #f1dfb6;border-radius:11px;padding:12px;color:#795d20;font-size:12px;line-height:1.55;margin-bottom:15px}.uid{word-break:break-all;background:#f2f5fa;border-radius:8px;padding:9px;font-size:11px}.foot{font-size:11px;line-height:1.5;color:#87919e;margin-top:13px}
+@media(max-width:740px){.layout{display:block;margin:13px auto}.side{position:static;display:flex;overflow:auto;padding:6px;margin-bottom:14px}.sidetitle{display:none}.side button{white-space:nowrap;width:auto}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.card{padding:14px}.stats{gap:7px}.stat{padding:12px}.stat b{font-size:21px}.heading h1{font-size:21px}}
+
+/* NiSiNEX Google Play-inspired visual refresh — presentation only */
+:root{
+  --blue:#1a73e8;--ink:#202124;--muted:#5f6368;--line:#e8eaed;--bg:#ffffff;
+}
+*{box-sizing:border-box}
+html,body{background:#fff!important;color:#202124;font-family:"Roboto",Arial,sans-serif}
+button,input,textarea,select{font-family:"Roboto",Arial,sans-serif}
+.top{background:#fff;border-bottom:1px solid #e8eaed;box-shadow:none}
+.brand{color:#202124}
+.brand small{color:#1a73e8}
+.pill{background:#e8f0fe;color:#1967d2}
+.layout{background:#fff}
+.side,.card,.stat{background:#fff;border:1px solid #e8eaed;border-radius:16px;box-shadow:0 1px 3px rgba(60,64,67,.10)}
+.side button{color:#3c4043;border-radius:24px}
+.side button.active,.side button:hover{background:#e8f0fe;color:#1967d2}
+.heading h1{color:#202124;font-weight:700;letter-spacing:-.35px}
+.heading p,.hint,.foot,.stat span{color:#5f6368}
+.primary{background:#1a73e8;color:#fff;border:0;border-radius:24px;box-shadow:none}
+.primary:hover{background:#1765cc}
+.primary:active{background:#1558b0}
+.secondary{background:#fff;border:1px solid #dadce0;color:#1967d2;border-radius:24px}
+.secondary:hover{background:#f8fafd}
+.danger{background:#fce8e6;color:#c5221f;border-radius:20px}
+.stat{box-shadow:none}
+.stat b{color:#202124}
+.card{box-shadow:0 1px 3px rgba(60,64,67,.10)}
+.field label{color:#3c4043}
+.field input,.field select,.field textarea{
+  border:1px solid #dadce0;border-radius:10px;background:#fff;color:#202124
+}
+.field input:focus,.field textarea:focus,.field select:focus{
+  border-color:#1a73e8;box-shadow:0 0 0 2px rgba(26,115,232,.14)
+}
+.upload{border:1px dashed #dadce0;background:#f8f9fa;border-radius:12px}
+.badge{border-radius:20px}
+.uid{background:#f1f3f4;color:#3c4043}
+.warning{background:#fef7e0;border-color:#fce8b2;color:#5f4b00}
+table th{color:#5f6368}
+th,td{border-bottom-color:#e8eaed}
+.appcell img{border-radius:12px}
+@media(max-width:740px){
+  .layout{margin:12px auto}
+  .side{background:#f1f3f4;border:0;border-radius:28px;gap:3px}
+  .side button{padding:11px 14px}
+  .side button.active{background:#1a73e8;color:#fff}
+  .card,.stat{border-radius:14px}
+}
+
+
+/* Consistent tactile interaction polish */
+button,.card,.stat,.side button,.appcell img{
+  transition:transform .16s ease,background-color .16s ease,
+    border-color .16s ease,box-shadow .16s ease,color .16s ease;
+}
+button:active{transform:scale(.97)}
+.primary:hover,.secondary:hover,.danger:hover,.pill:hover{transform:translateY(-1px)}
+.card:hover,.stat:hover{box-shadow:0 3px 10px rgba(60,64,67,.10)}
+button:focus-visible{outline:2px solid #1a73e8;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+
+</style></head><body>
+<header class="top"><div class="brand"><img src="./logo.png" alt="NiSiNEX"> <div>NiSiNEX - Admin Panel</div></div><div class="right"><span id="statusTop" class="hint">Connecting…</span><button id="signout" class="pill hidden">Disconnect</button></div></header>
+<div id="app" class="layout hidden"><aside class="side"><div class="sidetitle">STORE MANAGEMENT</div><button class="active" data-tab="dashboard">▦ Dashboard</button><button data-tab="apps">▣ All Apps</button><button data-tab="editor">＋ Upload App</button><button data-tab="users">♙ User Accounts</button><button data-tab="notifications">♧ Notifications</button><button data-tab="access">⚙ Admin Access</button></aside>
+<main class="main">
+<section id="dashboardTab"><div class="heading"><div><h1>Dashboard</h1><p>Manage the NiSiNEX app catalogue.</p></div><button class="primary" onclick="newApp()">＋ Upload app</button></div><div class="stats"><div class="stat"><b id="total">0</b><span>Total apps</span></div><div class="stat"><b id="published">0</b><span>Published</span></div><div class="stat"><b id="drafts">0</b><span>Drafts</span></div><div class="stat"><b id="allDownloads">0</b><span>Total downloads</span></div></div><div class="card"><h2 class="title2">Recently updated</h2><div id="recent" class="tablewrap"></div></div></section>
+<section id="appsTab" class="hidden"><div class="heading"><div><h1>All apps</h1><p>Edit, publish or remove listings.</p></div><button class="primary" onclick="newApp()">＋ Upload app</button></div><div class="card"><div id="all" class="tablewrap"></div></div></section>
+<section id="editorTab" class="hidden"><div class="heading"><div><h1 id="formTitle">Upload new app</h1><p>Enter app details and upload the APK, app icon and screenshots directly to Firebase Storage.</p></div><button class="secondary" onclick="switchTab('apps')">← Back</button></div>
+<form id="form" class="card"><input id="id" type="hidden">
+<h2 class="title2">1. App information</h2><div class="formgrid">
+<div class="field"><label>App name *</label><input id="name" required maxlength="70"></div><div class="field"><label>Developer / Publisher *</label><input id="developer" required value="NiSiNEX"></div>
+<div class="field"><label>Package name *</label><input id="packageName" required placeholder="com.company.app"></div><div class="field"><label>Category *</label><select id="category" required><option value="">Choose category</option><option>Productivity</option><option>Tools</option><option>Lifestyle</option><option>Education</option><option>Finance</option><option>Entertainment</option><option>Communication</option><option>Games</option><option>Business</option><option>Health & Fitness</option><option>Other</option></select></div>
+<div class="field full"><label>Short description *</label><input id="shortDescription" required maxlength="120"></div><div class="field full"><label>Full description *</label><textarea id="fullDescription" required></textarea></div>
+<div class="field"><label>Version *</label><input id="version" required placeholder="1.0.0"></div><div class="field"><label>Version code</label><input id="versionCode" type="number" min="1"></div><div class="field"><label>Minimum Android version</label><input id="minAndroid" placeholder="Android 8.0 or later"></div><div class="field"><label>App size</label><input id="downloadSize" placeholder="e.g. 18 MB"></div><div class="field"><label>Rating label (optional)</label><input id="rating" placeholder="New"></div><div class="field"><label>Release date</label><input id="releaseDate" type="date"></div>
+<div class="field full"><label>What's new</label><textarea id="whatsNew" placeholder="New features, improvements, bug fixes..."></textarea></div></div>
+<hr style="border:0;border-top:1px solid #edf0f4;margin:22px 0"><h2 class="title2">2. Upload files to Firebase Storage</h2><div class="formgrid">
+<div class="field"><label>App Icon *</label><div class="upload"><input id="iconFileInput" type="file" accept="image/*"><input id="iconUrlInput" type="url" placeholder="Optional legacy image URL"><img id="iconPreview" class="preview"><div class="hint">Choose an image. It will be uploaded securely to Firebase Storage.</div></div></div>
+<div class="field"><label>APK File *</label><div class="upload"><input id="apkFileInput" type="file" accept=".apk,application/vnd.android.package-archive"><input id="apkUrlInput" type="url" placeholder="Optional legacy direct APK URL"><div class="hint" id="apkInfo">Select the APK file to upload it to Firebase Storage.</div></div></div>
+<div class="field full"><label>App screenshots</label><div class="upload"><input id="screenshotsFiles" type="file" accept="image/*" multiple><textarea id="screenshotsUrls" rows="2" placeholder="Optional legacy image URLs, one per line"></textarea><div class="hint">Select multiple screenshots. They will be uploaded to Firebase Storage.</div><div class="shots" id="shotPreview"></div></div></div></div>
+<hr style="border:0;border-top:1px solid #edf0f4;margin:22px 0"><h2 class="title2">3. Store & support details</h2><div class="formgrid">
+<div class="field"><label>Privacy policy URL</label><input id="privacyUrl" type="url" placeholder="https://..."></div><div class="field"><label>Support email</label><input id="supportEmail" type="email"></div><div class="field full"><label>Tags (comma separated)</label><input id="tags" placeholder="tools, productivity, calculator"></div>
+<div class="field full"><div class="checkline"><label><input id="featured" type="checkbox"> Feature on home page</label><label><input id="isPublished" type="checkbox" checked> Publish on website</label></div></div></div>
+<div class="actions"><button id="save" class="primary">Save app</button><button type="button" class="secondary" onclick="resetForm()">Clear</button><span id="saveStatus" class="status"></span></div><div class="foot">The public website reads only published catalogue entries. Draft listings remain private in the admin catalogue.</div></form></section>
+<section id="usersTab" class="hidden"><div class="heading"><div><h1>User Accounts</h1><p>Registered NiSiNEX users and their account details.</p></div><button class="secondary" onclick="loadUsers()">↻ Refresh</button></div><div class="stats"><div class="stat"><b id="userTotal">0</b><span>Total accounts</span></div><div class="stat"><b id="userActive">0</b><span>Active accounts</span></div><div class="stat"><b id="userToday">0</b><span>Joined today</span></div></div><div class="card"><div class="field"><label>Search by name, phone or email</label><input id="userSearch" placeholder="Search accounts…" oninput="drawUsers()"></div><div id="usersTable" class="tablewrap">Loading user accounts…</div><p class="foot">Passwords are never shown or stored in this panel. Firebase Authentication securely manages passwords.</p></div><div id="userDetail" class="card hidden"></div></section>
+<section id="notificationsTab" class="hidden"><div class="heading"><div><h1>Notifications</h1><p>Send announcements and updates to NiSiNEX users.</p></div></div><div class="card"><h2 class="title2">Send a notification</h2><form id="noticeForm"><div class="field"><label>Notification title *</label><input id="noticeTitle" maxlength="80" required placeholder="e.g. New app update"></div><div class="field"><label>Message *</label><textarea id="noticeMessage" maxlength="600" required placeholder="Write a message for your users..."></textarea></div><div class="actions"><button class="primary" id="sendNotice">Send to all users</button><span id="noticeStatus" class="status"></span></div></form></div><div class="card"><h2 class="title2">Sent notifications</h2><div id="noticeHistory" class="tablewrap">Loading notifications…</div></div></section>
+<section id="accessTab" class="hidden"><div class="heading"><div><h1>Admin access</h1><p>Password-free admin connection using Firebase Anonymous Authentication.</p></div></div><div class="card"><div class="warning">This panel does not ask for an email or password. The browser receives a Firebase Anonymous UID. Only the UID explicitly allowed in your Firebase security rules can write app data. Anyone else opening this page receives a different UID and cannot manage apps.</div><h2 class="title2">This browser's Admin UID</h2><div id="uid" class="uid">Loading…</div><button class="secondary" style="margin-top:10px" onclick="copyUid()">Copy UID</button><p class="foot">Keep this UID private. If browser data is cleared or you switch browser/device, a new anonymous UID may be created and you will need to authorize it in the Firebase rules. This is not an email/password login.</p></div></section>
+</main></div>
+<div id="fatal" class="layout"><div class="card"><h2>Connecting to Firebase…</h2><p class="hint">If this screen remains, check that Anonymous Authentication and Firebase services are enabled.</p><div id="fatalMsg" class="status"></div></div></div>
+<script type="module">
+import{initializeApp}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import{getAuth,signInAnonymously,onAuthStateChanged,signOut}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import{getDatabase,ref,onValue,set,remove,get,push}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import{getStorage,ref as storageRef,uploadBytesResumable,getDownloadURL}from"https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
+const cfg={apiKey:"AIzaSyA3gPzpAJO6xaih9ISLCi-O1HfpgfQv2gU",authDomain:"my-overtime-b28ab.firebaseapp.com",databaseURL:"https://my-overtime-b28ab-default-rtdb.asia-southeast1.firebasedatabase.app",projectId:"my-overtime-b28ab",storageBucket:"my-overtime-b28ab.firebasestorage.app",messagingSenderId:"44746936015",appId:"1:44746936015:web:35fb6ef01d403e8011f1ba"};
+const app=initializeApp(cfg),auth=getAuth(app),db=getDatabase(app),storage=getStorage(app),$=id=>document.getElementById(id);let records={},me=null,users={},usersListener=null,downloadCounts={},noticeListener=null;
+const keys=["name","developer","packageName","category","shortDescription","fullDescription","version","versionCode","minAndroid","downloadSize","rating","releaseDate","whatsNew","privacyUrl","supportEmail","tags"];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+onAuthStateChanged(auth,u=>{if(u){me=u;$("fatal").classList.add("hidden");$("app").classList.remove("hidden");$("statusTop").textContent="Firebase connected";$("uid").textContent=u.uid;subscribe()}else{$("statusTop").textContent="Connecting…"}});
+signInAnonymously(auth).catch(e=>{$("fatalMsg").textContent=e.message;$("statusTop").textContent="Connection failed"});
+$("signout").onclick=()=>signOut(auth).then(()=>signInAnonymously(auth));
+function subscribe(){
+ onValue(ref(db,"apps"),s=>{records=s.val()||{};draw()},e=>console.error("Apps read failed:",e));
+ onValue(ref(db,"appDownloadCounts"),snap=>{downloadCounts=snap.val()||{};draw();drawDownloadTable()});
+ if(noticeListener)noticeListener();noticeListener=onValue(ref(db,"notifications"),snap=>drawNotices(snap.val()||{}),e=>{$("noticeHistory").textContent="Cannot read notifications: "+e.message});
+ if(usersListener)usersListener();
+ usersListener=onValue(ref(db,"users"),s=>{users=s.val()||{};drawUsers()},e=>{$("usersTable").textContent="Cannot read user accounts. Check Firebase Database Rules for admin read access.";console.error(e)});
+}
+document.querySelectorAll(".side button").forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
+window.switchTab=t=>{["dashboard","apps","editor","users","notifications","access"].forEach(x=>$(x+"Tab").classList.toggle("hidden",x!==t));document.querySelectorAll(".side button").forEach(b=>b.classList.toggle("active",b.dataset.tab===t));scrollTo(0,0)};
+function list(){return Object.entries(records).map(([id,a])=>({...a,id})).sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0))}
+function table(arr){return `<table><thead><tr><th>App</th><th>Category</th><th>Version</th><th>Downloads</th><th>Status</th><th>Actions</th></tr></thead><tbody>${arr.map(a=>`<tr><td><div class="appcell"><img src="${esc(driveImageUrl(a.iconUrl||"./logo.png"))}"><span>${esc(a.name)}</span></div></td><td>${esc(a.category)}</td><td>${esc(a.version)}</td><td>${(Number(downloadCounts[a.id])||0).toLocaleString()}</td><td><span class="badge ${a.status==="published"?"pub":"draft"}">${a.status==="published"?"Published":"Draft"}</span></td><td><button class="secondary" onclick="editApp('${a.id}')">Edit</button> <button class="danger" onclick="deleteApp('${a.id}')">Delete</button></td></tr>`).join("")||'<tr><td colspan="5">No apps uploaded.</td></tr>'}</tbody></table>`}
+function draw(){let a=list();$("allDownloads").textContent=Object.values(downloadCounts).reduce((n,v)=>n+(Number(v)||0),0).toLocaleString();$("total").textContent=a.length;$("published").textContent=a.filter(x=>x.status==="published").length;$("drafts").textContent=a.filter(x=>x.status!=="published").length;$("recent").innerHTML=table(a.slice(0,5));$("all").innerHTML=table(a)}
+window.newApp=()=>{resetForm();$("formTitle").textContent="Upload new app";switchTab("editor")};
+window.editApp=id=>{let a=records[id];if(!a)return;resetForm();$("formTitle").textContent="Edit app";$("id").value=id;keys.forEach(k=>$(k).value=a[k]??"");$("featured").checked=!!a.featured;$("isPublished").checked=a.status==="published";$("apkInfo").textContent=(a.apkDownloadLink||a.apkUrl)?"APK download link saved.":"No APK link saved.";$("apkUrlInput").value=a.apkDownloadLink||a.apkUrl||"";$("iconUrlInput").value=a.iconUrl||"";if(a.iconUrl){$("iconPreview").src=driveImageUrl(a.iconUrl);$("iconPreview").style.display="block"}$("screenshotsUrls").value=(a.screenshots||[]).join("\n");$("shotPreview").innerHTML=(a.screenshots||[]).map(u=>`<img src="${esc(driveImageUrl(u))}" alt="">`).join("");$("save").textContent="Update app";switchTab("editor")};
+window.deleteApp=async id=>{let a=records[id];if(!a||!confirm(`Delete ${a.name}?`))return;try{await Promise.all([remove(ref(db,"apps/"+id)),remove(ref(db,"publicApps/"+id))]);alert("App deleted.")}catch(e){alert("Delete failed: "+e.message)}};
+window.resetForm=()=>{$("form").reset();$("id").value="";$("developer").value="NiSiNEX";$("isPublished").checked=true;$("iconPreview").style.display="none";$("shotPreview").innerHTML="";$("apkInfo").textContent="Select an APK file or use an existing direct URL.";$("saveStatus").textContent="";$("save").textContent="Save app"};
+function uploadToStorage(file,path,onProgress=()=>{}){return new Promise((resolve,reject)=>{const task=uploadBytesResumable(storageRef(storage,path),file,{contentType:file.type||'application/octet-stream'});task.on('state_changed',s=>onProgress(Math.round(s.bytesTransferred/s.totalBytes*100)),reject,async()=>{try{resolve(await getDownloadURL(task.snapshot.ref))}catch(e){reject(e)}})})}
+function driveFileId(url){try{let u=new URL(url);let m=u.pathname.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);if(m)return m[1];let id=u.searchParams.get("id");return id||null}catch(_){return null}}
+function driveImageUrl(url){let id=driveFileId(url);return id?`https://drive.google.com/thumbnail?id=${encodeURIComponent(id)}&sz=w1200`:url}
+function driveApkUrl(url){let id=driveFileId(url);return id?`https://drive.google.com/uc?export=download&id=${id}`:url}
+$("iconUrlInput").oninput=()=>{let u=$("iconUrlInput").value.trim();if(u){$("iconPreview").src=driveImageUrl(u);$("iconPreview").style.display="block"}else{$("iconPreview").style.display="none"}};
+$("screenshotsUrls").oninput=()=>{$("shotPreview").innerHTML=$("screenshotsUrls").value.split(/\n+/).map(x=>x.trim()).filter(Boolean).map(u=>`<img src="${esc(driveImageUrl(u))}" alt="">`).join("")};
+$("apkUrlInput").oninput=()=>{$("apkInfo").textContent=$("apkUrlInput").value.trim()?"Google Drive APK link added.":"Select an APK file or use an existing direct URL."};
+$("form").onsubmit=async e=>{e.preventDefault();let id=$("id").value||("app_"+Date.now()),prev=records[id]||{},apkUrl=$("apkUrlInput").value.trim(),iconUrl=$("iconUrlInput").value.trim(),screenshots=$("screenshotsUrls").value.split(/\n+/).map(x=>x.trim()).filter(Boolean),iconFile=$("iconFileInput").files[0],apkFile=$("apkFileInput").files[0],shotFiles=[...$("screenshotsFiles").files];
+if(!iconFile&&!iconUrl&&!prev.iconUrl){$("saveStatus").textContent="Please choose an app icon image.";return}if(!apkFile&&!apkUrl&&!prev.apkDownloadLink&&!prev.apkUrl){$("saveStatus").textContent="Please choose an APK file.";return}
+if(iconFile&&iconFile.size>10*1024*1024){$("saveStatus").textContent="App icon must be smaller than 10 MB.";return}if(apkFile&&apkFile.size>500*1024*1024){$("saveStatus").textContent="APK file must be smaller than 500 MB.";return}if(shotFiles.some(f=>f.size>15*1024*1024)){$("saveStatus").textContent="Each screenshot must be smaller than 15 MB.";return}
+$("save").disabled=true;try{$("saveStatus").textContent="Preparing Firebase uploads…";let data={...prev};keys.forEach(k=>data[k]=$(k).value.trim());data.versionCode=Number(data.versionCode)||"";data.featured=$("featured").checked;data.status=$("isPublished").checked?"published":"draft";
+if(iconFile){$("saveStatus").textContent="Uploading app icon to Firebase Storage…";data.iconUrl=await uploadToStorage(iconFile,`apps/${id}/icon_${Date.now()}_${iconFile.name.replace(/[^a-zA-Z0-9._-]/g,'_')}`)}else if(iconUrl)data.iconUrl=driveImageUrl(iconUrl);
+if(apkFile){$("saveStatus").textContent="Uploading APK to Firebase Storage…";data.apkDownloadLink=await uploadToStorage(apkFile,`apps/${id}/apk_${Date.now()}_${apkFile.name.replace(/[^a-zA-Z0-9._-]/g,'_')}`)}else if(apkUrl)data.apkDownloadLink=driveApkUrl(apkUrl);else data.apkDownloadLink=prev.apkDownloadLink||prev.apkUrl;
+data.apkUrl=data.apkDownloadLink;
+let shotUrls=screenshots.map(driveImageUrl);for(let i=0;i<shotFiles.length;i++){let f=shotFiles[i];$("saveStatus").textContent=`Uploading screenshot ${i+1}/${shotFiles.length}…`;shotUrls.push(await uploadToStorage(f,`apps/${id}/screenshots/${Date.now()}_${i}_${f.name.replace(/[^a-zA-Z0-9._-]/g,'_')}`))}data.screenshots=shotFiles.length||screenshots.length?shotUrls:(prev.screenshots||[]);data.updatedAt=Date.now();data.createdAt=prev.createdAt||Date.now();data.updatedBy=me.uid;
+$("saveStatus").textContent="Saving app details…";await set(ref(db,"apps/"+id),data);if(data.status==="published")await set(ref(db,"publicApps/"+id),data);else await remove(ref(db,"publicApps/"+id));$("saveStatus").textContent="App and files saved to Firebase successfully.";resetForm();switchTab("apps")
+}catch(err){console.error(err);$("saveStatus").textContent="Upload/save failed: "+err.message}finally{$("save").disabled=false}};
+function drawDownloadTable(){draw()}
+function drawNotices(data){const arr=Object.entries(data||{}).map(([id,x])=>({...x,id})).sort((a,b)=>Number(b.createdAt||0)-Number(a.createdAt||0));$("noticeHistory").innerHTML=arr.length?`<table><thead><tr><th>Title</th><th>Message</th><th>Date</th><th>Action</th></tr></thead><tbody>${arr.map(x=>`<tr><td>${esc(x.title||"")}</td><td>${esc(x.message||"")}</td><td>${x.createdAt?new Date(x.createdAt).toLocaleString():"—"}</td><td><button class="danger" onclick="deleteNotice('${x.id}')">Delete</button></td></tr>`).join("")}</tbody></table>`:'<div class="hint">No notifications sent yet.</div>'}
+$("noticeForm").onsubmit=async e=>{e.preventDefault();const title=$("noticeTitle").value.trim(),message=$("noticeMessage").value.trim();if(!title||!message)return;const btn=$("sendNotice");btn.disabled=true;$("noticeStatus").textContent="Sending…";try{await push(ref(db,"notifications"),{title,message,audience:"all",createdAt:Date.now(),createdBy:me.uid});$("noticeForm").reset();$("noticeStatus").textContent="Notification sent to all users."}catch(err){$("noticeStatus").textContent="Send failed: "+err.message}finally{btn.disabled=false}};
+window.deleteNotice=async id=>{if(!confirm("Delete this notification for all users?"))return;try{await remove(ref(db,"notifications/"+id))}catch(e){alert("Delete failed: "+e.message)}};
+window.loadUsers=async()=>{try{const snap=await get(ref(db,"users"));users=snap.val()||{};drawUsers()}catch(e){$("usersTable").textContent="Unable to load users: "+e.message}};
+window.drawUsers=()=>{
+ const q=($("userSearch")?.value||"").trim().toLowerCase(),arr=Object.entries(users).map(([uid,x])=>({...x,uid})).filter(x=>`${x.displayName||""} ${x.phone||""} ${x.email||""}`.toLowerCase().includes(q)).sort((x,y)=>Number(y.createdAt||0)-Number(x.createdAt||0));
+ const today=new Date().toDateString();
+ $("userTotal").textContent=Object.keys(users).length;
+ $("userActive").textContent=Object.values(users).filter(x=>x.status!=="blocked").length;
+ $("userToday").textContent=Object.values(users).filter(x=>x.createdAt&&new Date(x.createdAt).toDateString()===today).length;
+ $("usersTable").innerHTML=arr.length?`<table><thead><tr><th>Name</th><th>Mobile</th><th>Email</th><th>Joined</th><th>Action</th></tr></thead><tbody>${arr.map(x=>`<tr><td>${esc(x.displayName||"—")}</td><td>${esc(x.phone||"—")}</td><td>${esc(x.email||"—")}</td><td>${x.createdAt?new Date(x.createdAt).toLocaleDateString():"—"}</td><td><button class="secondary" onclick="viewUser('${x.uid}')">Details</button></td></tr>`).join("")}</tbody></table>`:'<div class="hint">No registered users found.</div>';
+};
+window.viewUser=uid=>{
+ const x=users[uid];if(!x)return;const box=$("userDetail");box.classList.remove("hidden");
+ box.innerHTML=`<div class="heading"><div><h2>${esc(x.displayName||"User profile")}</h2><p>Account information</p></div><button class="secondary" onclick="document.getElementById('userDetail').classList.add('hidden')">Close</button></div>
+ <div class="formgrid"><div><b>Mobile number</b><p>${esc(x.phone||"—")}</p></div><div><b>Email</b><p>${esc(x.email||"—")}</p></div><div><b>Account status</b><p>${esc(x.status||"active")}</p></div><div><b>Joined</b><p>${x.createdAt?new Date(x.createdAt).toLocaleString():"—"}</p></div><div><b>Last login</b><p>${x.lastLoginAt?new Date(x.lastLoginAt).toLocaleString():"Not available"}</p></div><div><b>Firebase UID</b><p class="uid">${esc(uid)}</p></div></div>`;
+};
+window.copyUid=async()=>{try{await navigator.clipboard.writeText(me.uid);alert("Admin UID copied.")}catch(e){alert(me.uid)}};
+</script></body></html>
